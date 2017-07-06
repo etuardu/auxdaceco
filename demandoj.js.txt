@@ -1,0 +1,76 @@
+// demandoj.txt - Aŭdaceco
+//
+// Skribu la demandojn en tiu ĉi dosiero sub la linio markita "KOMENCO".
+// 
+// Unue skribu la nomon de la kategorio kaj poste listigu ĉiun demandon
+// apartenantan al ĝi, de la malplej valora (200 poentoj) ĝis la plej
+// valora.
+//
+// Kaj la kategorioj kaj la unuopaj demandoj devos troviĝi en po unu
+// linio (t.e., ne eblas doni liniajn interrompojn en ĝiaj tekstoj).
+// 
+// Inter unu kategorio kaj la sekva, metu unu (aŭ pli) blankan linion.
+// Ideale, vi listigu entute 6 kategoriojn, havante po 5 demandojn,
+// sed tio ne estas devige kaj la ludo mem adaptiĝos ĉiukaze.
+// Gravas nur ke la demandaro de ĉiu kategorio estu samnombra.
+//
+// Ekzemplo de kvizo kun du kategorioj el tri demandoj:
+//
+//   KATEGORIO UNU
+//   Ĉu eĥo ŝanĝas ĉiuĵaŭde?
+//   Kiakolora estis la blanka ĉevalo de Napoleono?
+//   Kiom estis la sep nanoj?
+//
+//   KATEGORIO DU
+//   Kiom estas 2+2?
+//   Kio okazis kristnaske en jaro nul?
+//   Ĉu aŭ malĉu?
+//   
+//
+
+/* -- KOMENCO (ne ŝanĝu tiun ĉi linion) -- */ var txt_demandoj = `
+
+
+Vivo de Zamenhof
+Demado 1 pri Zamenhof?
+Demando 2 pri Zamenhof?
+Demando 3 pri Zamenhof?
+Demando 4 pri Zamenhof?
+Demando 5 pri Zamenhof?
+
+Literaturo
+Demando 1 pri literaturo?
+Demando 2 pri literaturo?
+Demando 3 pri literaturo?
+Demando 4 pri literaturo?
+Demando 5 pri literaturo?
+
+Gramatiko
+Demado 1 pri gramatiko?
+Demando 2 pri gramatiko?
+Demando 3 pri gramatiko?
+Demando 4 pri gramatiko?
+Demando 5 pri gramatiko?
+
+Esperanto-movado en aliaj planedoj de la sunsistemo
+Demando 1 pri sunsistemo?
+Demando 2 pri sunsistemo?
+Demando 3 pri sunsistemo?
+Demando 4 pri sunsistemo?
+Demando 5 pri sunsistemo?
+
+Strangaj vortoj
+Demando 1 pri strangaj vortoj?
+Demando 2 pri strangaj vortoj?
+Demando 3 pri strangaj vortoj?
+Demando 4 pri strangaj vortoj?
+Demando 5 pri strangaj vortoj?
+
+Aliaj aferoj
+Demando 1 pri aliaj aferoj?
+Demando 2 pri aliaj aferoj?
+Demando 3 pri aliaj aferoj?
+Demando 4 pri aliaj aferoj?
+Demando 5 pri aliaj aferoj?
+
+`; /* -- FINO (ne ŝanĝu tiun ĉi linion) -- */

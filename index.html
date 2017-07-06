@@ -1,0 +1,107 @@
+<html>
+<title>Aŭdaceco - La kvizo</title>
+<link rel="stylesheet" href="lib/style.css">
+<script src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="demandoj.js.txt"></script>
+<script type="text/javascript" src="lib/demandaro.js"></script>
+<script>
+
+var g_dem; // instanco de la demandaro, malloka
+
+$(document).ready(function(){
+
+  g_dem = new Demandaro();
+
+  g_dem.parse_txt(txt_demandoj);
+  // legas kaj ŝarĝas la demandojn el
+  // dosiero demandoj.js.txt
+
+  $('#tabulo').append(g_dem.render_table());
+  // dismetas la html-on pri la demandaro
+  // ene de la tabelon
+  
+  $('#tabulo a').click(function() {
+    // Evento okazanta kiam oni elektas
+    // per klako demandon el la tabulo
+
+    $td = $(this).parent();
+
+    // kategoria kaj demanda indeksoj
+    // el pozicio de la ĉelo
+    dem_i = $td.parent().index()-1;
+    kat_i = $td.index();
+
+    // agordo de la nuna demando
+    g_dem.set_current(kat_i, dem_i);
+
+    // montri la panelon kun la demando
+    $('#div_txtdemando').text(g_dem.get_current_question());
+    $('#div_cxefa').hide();
+    $('#div_demando').show();
+
+    // malŝalti la demandan ligilon
+    $td.addClass('malsxaltita');
+    $(this).unbind('click');
+  });
+
+  $('#tr_ldnomoj td').blur(function(e) {
+    // Evento okazanta kiam oni ŝanĝas la
+    // nomon de ludanton
+
+    var td = e.currentTarget;
+
+    var i = td.cellIndex;
+    var nomo = $(td).text();
+
+    btn = $('#div_btnludantoj input')[i];
+    $(btn).val(nomo);
+  });
+
+});
+
+function win(player_n) {
+  // Funkcio vokata por doni poentojn
+  // al ludanto kaj reveni al la tabulo.
+  // Se player_n estas -1, la poentoj
+  // iras al neniu.
+
+  if (player_n != -1) {
+    // iu gajnis
+    var $td = $($('#tr_ldpoentoj td')[player_n-1]);
+    $td.text(parseInt($td.text()) + g_dem.get_current_prize());
+  }
+
+  $('#div_demando').hide();
+  $('#div_cxefa').show();
+}
+
+</script>
+<body>
+<div id="div_cxefa">
+  <table id="tabulo">
+  </table>
+  <table id="tbl_ludantoj">
+    <tr id="tr_ldnomoj">
+      <td contentEditable="true">Ludanto 1</td>
+      <td contentEditable="true">Ludanto 2</td>
+      <td contentEditable="true">Ludanto 3</td>
+    </tr>
+    <tr id="tr_ldpoentoj">
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+</div>
+<div id="div_demando">
+  <div id="div_txtdemando">
+  </div>
+  <div id="div_btnludantoj">
+    <input type="button" value="Ludanto 1" onclick="win(1)">
+    <input type="button" value="Ludanto 2" onclick="win(2)">
+    <input type="button" value="Ludanto 3" onclick="win(3)">
+    <input type="button" value="Neniu" onclick="win(-1)">
+  </div>
+</div>
+</body>
+</html>
