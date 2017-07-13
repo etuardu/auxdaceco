@@ -1,10 +1,13 @@
-// demandoj.txt - Aŭdaceco
+// demandoj_ekzemplo.js.txt - Aŭdaceco
 //
-// Skribu la demandojn en tiu ĉi dosiero sub la linio markita "KOMENCO".
+// Kreu kopion de tiu ĉi dosiero kaj nomu ĝin "demandoj.js.txt"
+// (aŭ simple forigu "_ekzemplo" el la dosiernomo de tiu ĉi dosiero
+// se vi ne volas konservi la originalon) kaj redaktu la demandojn
+// de la kvizo sub la linio markita "KOMENCO".
 // 
 // Unue skribu la nomon de la kategorio kaj poste listigu ĉiun demandon
 // apartenantan al ĝi, de la malplej valora (200 poentoj) ĝis la plej
-// valora.
+// valora, laŭ la ekzemplo.
 //
 // Kaj la kategorioj kaj la unuopaj demandoj devos troviĝi en po unu
 // linio (t.e., ne eblas doni liniajn interrompojn en ĝiaj tekstoj).
@@ -14,16 +17,20 @@
 // sed tio ne estas devige kaj la ludo mem adaptiĝos ĉiukaze.
 // Gravas nur ke la demandaro de ĉiu kategorio estu samnombra.
 //
-// Ekzemplo de kvizo kun du kategorioj el tri demandoj:
+// Eblas aldoni komentojn fine de ĉiu demando, post la markilo "##".
+// Ili ne estos montritaj dum la kvizo, sed povus esti utilaj por
+// la kvizestro.
+//
+// Ekzemplo de kvizo kun du kategorioj el po tri demandoj:
 //
 //   KATEGORIO UNU
-//   Ĉu eĥo ŝanĝas ĉiuĵaŭde?
+//   Ĉu eĥo ŝanĝas ĉiuĵaŭde? ## respondo: ne, ĝi ŝanĝas ĉiusabate
 //   Kiakolora estis la blanka ĉevalo de Napoleono?
 //   Kiom estis la sep nanoj?
 //
 //   KATEGORIO DU
 //   Kiom estas 2+2?
-//   Kio okazis kristnaske en jaro nul?
+//   Kio okazis kristnaske en jaro nul? ## sugesto: en Betleĥemo
 //   Ĉu aŭ malĉu?
 //   
 //
@@ -72,5 +79,6 @@ Demando 2 pri aliaj aferoj?
 Demando 3 pri aliaj aferoj?
 Demando 4 pri aliaj aferoj?
 Demando 5 pri aliaj aferoj?
+
 
 `; /* -- FINO (ne ŝanĝu tiun ĉi linion) -- */
