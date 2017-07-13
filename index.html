@@ -1,4 +1,6 @@
 <html>
+<head>
+<meta charset="utf-8" />
 <title>Aŭdaceco - La kvizo</title>
 <link rel="stylesheet" href="lib/style.css">
 <script src="lib/jquery.min.js"></script>
@@ -9,6 +11,13 @@
 var g_dem; // instanco de la demandaro, malloka
 
 $(document).ready(function(){
+
+  if (typeof txt_demandoj === 'undefined') {
+    alert('Demandaro neekzistanta.\n' +
+    'Kontrolu ĉu la dosiero "demandoj.js.txt" ekzistas.\n' +
+    'Legu la dosieron README.md por pluaj informoj.');
+    return;
+  }
 
   g_dem = new Demandaro();
 
@@ -76,6 +85,7 @@ function win(player_n) {
 }
 
 </script>
+</head>
 <body>
 <div id="div_cxefa">
   <table id="tabulo">
