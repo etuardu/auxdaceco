@@ -1,38 +1,7 @@
 // demandoj_ekzemplo.js.txt - Aŭdaceco
 //
-// Kreu kopion de tiu ĉi dosiero kaj nomu ĝin "demandoj.js.txt"
-// (aŭ simple forigu "_ekzemplo" el la dosiernomo de tiu ĉi dosiero
-// se vi ne volas konservi la originalon) kaj redaktu la demandojn
-// de la kvizo sub la linio markita "KOMENCO".
-// 
-// Unue skribu la nomon de la kategorio kaj poste listigu ĉiun demandon
-// apartenantan al ĝi, de la malplej valora (200 poentoj) ĝis la plej
-// valora, laŭ la ekzemplo.
-//
-// Kaj la kategorioj kaj la unuopaj demandoj devos troviĝi en po unu
-// linio (t.e., ne eblas doni liniajn interrompojn en ĝiaj tekstoj).
-// 
-// Inter unu kategorio kaj la sekva, metu unu (aŭ pli) blankan linion.
-// Ideale, vi listigu entute 6 kategoriojn, havante po 5 demandojn,
-// sed tio ne estas devige kaj la ludo mem adaptiĝos ĉiukaze.
-// Gravas nur ke la demandaro de ĉiu kategorio estu samnombra.
-//
-// Eblas aldoni komentojn fine de ĉiu demando, post la markilo "##".
-// Ili ne estos montritaj dum la kvizo, sed povus esti utilaj por
-// la kvizestro.
-//
-// Ekzemplo de kvizo kun du kategorioj el po tri demandoj:
-//
-//   KATEGORIO UNU
-//   Ĉu eĥo ŝanĝas ĉiuĵaŭde? ## respondo: ne, ĝi ŝanĝas ĉiusabate
-//   Kiakolora estis la blanka ĉevalo de Napoleono?
-//   Kiom estis la sep nanoj?
-//
-//   KATEGORIO DU
-//   Kiom estas 2+2?
-//   Kio okazis kristnaske en jaro nul? ## sugesto: en Betleĥemo
-//   Ĉu aŭ malĉu?
-//   
+// Redaktu la demandojn sub la linio markita KOMENCO.
+// Bonvolu legi la dosieron README.md por pluaj informoj.
 //
 
 /* -- KOMENCO (ne ŝanĝu tiun ĉi linion) -- */ var txt_demandoj = `
